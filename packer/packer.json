@@ -1,0 +1,27 @@
+{
+    "builders": [
+        {
+            "type": "docker",
+            "image": "stackbrew/debian:wheezy",
+            "export_path": "bitlbee-docker.tar"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": [
+                "apt-get update && apt-get install -y curl"
+            ]
+        },
+        {
+            "type": "chef-solo",
+            "run_list": [
+                "recipe[bitlbee::docker]"
+            ],
+            "cookbook_paths": [
+                "cookbooks"
+            ],
+            "prevent_sudo": true
+        }
+    ]
+}

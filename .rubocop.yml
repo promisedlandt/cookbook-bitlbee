@@ -1,0 +1,36 @@
+AllCops:
+  Includes:
+    - Guardfile
+  Excludes:
+    - tmp/**
+    - recipes/_development.rb
+
+CollectionMethods:
+  PreferredMethods:
+  Enabled: false
+    #collect: 'collect'
+    #collect!: 'collect!'
+    #inject: 'inject'
+    #detect: 'detect'
+    #find_all: 'select'
+
+CommentAnnotation:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Encoding:
+  Enabled: false
+
+LineLength:
+  Enabled: false
+
+MethodLength:
+    Max: 20
+
+RegexpLiteral:
+  Enabled: false
+
+StringLiterals:
+  EnforcedStyle: double_quotes

@@ -1,0 +1,3 @@
+#!/bin/sh
+exec 2>&1
+exec chpst -u <%= node[:bitlbee][:user] %>:<%= node[:bitlbee][:group] %> bitlbee -c <%= ::File.join(node[:bitlbee][:config_dir], "bitlbee.conf") %> -F -n
