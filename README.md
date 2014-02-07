@@ -83,19 +83,19 @@ end
 bitlbee_icq_account "12345678" do
   password "myicqpassword"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See below why this is needed
 end
 
 bitlbee_jabber_account "example@jabber.org" do
   password "myjabberpassword"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See below why this is needed
 end
 
 bitlbee_jabber_account "myotheraccount@jabber.ccc.de" do
   password "anotherjabberpassword"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See below why this is needed
 end
 ```
 
@@ -257,7 +257,7 @@ user_cleartext_password | Cleartext password of the user account | String |
 bitlbee_icq_account "12345678" do
   password "myicqpassword"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See above why this is needed
 end
 ```
 
@@ -287,7 +287,7 @@ user_cleartext_password | Cleartext password of the user account | String |
 bitlbee_jabber_account "example@jabber.org" do
   password "myjabberpassword"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See above why this is needed
 end
 ```
 
@@ -323,7 +323,7 @@ user_cleartext_password | Cleartext password of the user account | String |
 bitlbee_hipchat_account "12345_67890123" do
   password "myhipchatpwd"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See above why this is needed
 end
 ```
 
@@ -367,7 +367,7 @@ user_cleartext_password | Cleartext password of the user account | String |
 # using OAuth (and you should!)
 bitlbee_facebook_account "nils.landt" do
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See above why this is needed
 end
 
 # using password
@@ -375,7 +375,7 @@ bitlbee_facebook_account "nils.landt" do
   auth_strategy :password
   password "myfacebookpassword"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See above why this is needed
 end
 ```
 
@@ -410,7 +410,7 @@ user_cleartext_password | Cleartext password of the user account | String |
 bitlbee_steam_account "mysteamusername" do
   password "mysteampassword"
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See above why this is needed
 end
 ```
 
@@ -443,7 +443,7 @@ user_cleartext_password | Cleartext password of the user account | String |
 ```ruby
 bitlbee_gtalk_account "example@googlemail.com" do
   user "Nils"
-  user_cleartext_password "testpwd"   # See [here](https://github.com/promisedlandt/cookbook-bitlbee#passwords) why this is needed
+  user_cleartext_password "testpwd"   # See above why this is needed
 end
 ```
 
